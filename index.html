@@ -6,27 +6,50 @@
     <title>Dias Kevin |  Portfolio </title> 
     <!--tag titulo -->
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
-    <header> <!-- cabeçalho -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="#Home"> Home </a>
+    <header id="header"> <!-- cabeçalho -->
+        <nav class="header-nav"> <!-- classe para mandar estilos no geral -->
+            <ul class="menu menu-principal"> <!-- classe para mandar estilos no geral (responsivo) -->
+                <li class="menu-item">
+                    <a href="#home" class="menu-link active"> 
+                        <span class="menu-text"> Home </span> 
+                    </a>
                 </li>
-                <li>
-                    <a href="#Projetos"> Projeto </a>
+                <li class="menu-item">
+                    <a href="#Projetos" class="menu-link"> 
+                        <span> Projeto </span>
+                    </a>
                 </li>
-                <li>
-                    <a href="#Sobre"> Sobre </a>
+                <li class="menu-item">
+                    <a href="#Sobre" class="menu-link"> 
+                        <span> Sobre </span>
+                    </a>
                 </li>
-                <li>
-                    <a href="#Contato"> Contato </a>
+                <li class="menu-item">
+                    <a href="#Contato" class="menu-link"> 
+                        <span> Contato </span> 
+                    </a>
                 </li>
             </ul>
         </nav>
-    </header> <!-- fim cabeçalho -->
+        <div class="header-brand"> <!-- area do logo -->
+            <a href="#home"> 
+                <img src="img/log.png" alt="">
+        </a> 
+        </div> <!-- Fim area do logo -->
+        <div class="header-toggle">
+            <i id="toggleTheme" class="bi bi-sun"> </i>
+
+        </div>
+    </header>
+   
+
+    <!-- fim cabeçalho -->
 
 </body>
 </html>

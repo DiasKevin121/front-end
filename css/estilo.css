@@ -84,3 +84,8 @@ body { /* body estilização do corpo */
     justify-content: flex-end;
     
 }
+
+.header-logo .logo {
+    width: 3.25rem; /* tamanho da altura */ /* o rem ajuda nos sites responsivos, ajustando o tamanho da tela de acordo com cada dispositivo */
+    height: 3.25rem; /* tamanho da largura */
+}

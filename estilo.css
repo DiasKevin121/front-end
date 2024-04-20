@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap');
+
+/* Raiz do html tema do site dark */ 
+:root, :root[data-theme='dark'] {
+    --primary-color: #f0f0f0; /* cor de texto */ 
+    --secondary-bg-color: rgb(255, 255, 255); /* 2º cor de texto */
+    --primary-bg-color: #111217; /* cor de fundo */ 
+    /* bg= background = plano de fundo */ 
+    --text-color-sub-menu: rgb(255, 255, 255); /* cores do menu */ 
+    --secondary-bg-color: #28292e; /* cor secundaria do fundo da página */
+    --primary-border-color: #28292e; /* cores primarias das bordas */
+    --secundary-border-color: #28292e; /* cores secundarias das bordas */
+
+    --title-color: #f0f0f0; /* cores dos titulos */
+    --text-color: #9a9a9c; /* cores dos textos */
+    --link-color: #9a9a9c; /* cores dos links */
+    --icon-color: #ffffff; /* cores dos icones */ 
+
+}
+
+/* Raiz do html tema do site light */ 
+:root [data-theme='light'] {
+    --primary-color: #0b0b0f; /* cor de texto */
+    --primary-bg-color: #e9e9e9; /* cor de fundo */ 
+    --secondary-bg-color: #c7c8c9; 
+    --primary-border-color: #c7c8c9; 
+    --secondary-border-color: #9a9a9c; 
+
+    --title-color: #0b0b0f; 
+    --text-color-: #28292e; 
+    --link-color: #28292e;
+    --icon-color: #56575a;
+
+}
+
+/* 
+definindo variaveis de cores para um tema escuro 
+
+ROOT refere-se ao elemento raiz do documento HTML
+
+seletor :root define as variaveis globais
+
+Isso oferece uma maneira flexivel de definir valores 
+que podem ser reutilizados em todo o seu CSS e facilmente atualizadfos de um 
+unico lugar 
+*/ 
+
+html [data-theme='light'] .brand-logo {
+    filter: invert(1);
+}
+html [data-theme='light'] .tecnologias-logo{
+    filter: invert(80%);
+}
+/* (*) significa reset do CSS */ 
+* {
+    margin: 0px; /* margem superior */
+    padding: 0px; /* preenchimento // espaçamento dos elementos */ 
+    box-sizing: border-box; /* tamanho da caixa (nav) */
+    vertical-align: baseline; /* alinhamento vertical */ 
+    list-style: none; /* estilo de listas (tópicos em disco, números romanos...) */ 
+    scrollbar-width: thin; /* compriomento da barra lateral direita */ 
+    scrollbar-color: var( --secondary-bg-color); /* cor da barra */ 
+}
+body { /* body estilização do corpo */
+    background: var( --primary-bg-color);  /* cor do corpo da pagina */ 
+    font-family: 'Inter' , Tahoma, Geneva , Verdana, Geneva, Tahoma, sans-serif; /* fonte do texto*/ 
+    color: var(--text-color);
+}
+
+/* conteudo extra */ 
+
+#header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    z-index: 2;
+}
+.header-toggle { /* sistema do botão sol e lua */ 
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.header-logo .logo {
+    width: 3.25rem; /* tamanho da altura */ /* o rem ajuda nos sites responsivos, ajustando o tamanho da tela de acordo com cada dispositivo */
+    height: 3.25rem; /* tamanho da largura */
+}
+
+#toggleTheme {
+    font-size: 1.5rem; /* tamanho do botão dark/light */
+    color: var(--icon-color); /* cor do icone */
+    cursor: pointer; /* cursor do botão */
+    transition: ease-in-out .4s; /* efeito do cursor */
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    background: var(--primary-bg-color);
+}
+.menu-item {
+    width: 100%;
+}
+.menu-link {
+    display: flex;
+    align-items: center;
+    gap: .15rem; /* espaço dos itens */
+}
+.menu-mobile {
+    width: 100vw; /* visualização em tamanho unico de 100 em qualquer dispositivo */
+    position: fixed; /* posição do menu */
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid var(--primary-border-color);
+}
+.menu-mbile .menu-link {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+.menu-link.active .menu-icon,
+.menu-link.active .menu-text, 
+.menu-link:hover .menu-icon,
+.menu-link:hover .menu-text {
+    color: var(--primary-color);
+}
+
+.menu-icon, .menu-text {
+
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+}

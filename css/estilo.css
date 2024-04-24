@@ -3,19 +3,19 @@
 
 /* Raiz do html tema do site dark */ 
 :root, :root[data-theme='dark'] {
-    --primary-color: #f0f0f0; /* cor de texto */ 
-    --secondary-bg-color: blue; /* 2º cor de texto */
+    --primary-color: #ffffff; /* cor de texto */ 
+    --secondary-bg-color: rgb(255, 255, 255); /* 2º cor de texto */
     --primary-bg-color: #111217; /* cor de fundo */ 
     /* bg= background = plano de fundo */ 
-    --text-color-sub-menu: blue; /* cores do menu */ 
+    --text-color-sub-menu: rgb(255, 255, 255); /* cores do menu */ 
     --secondary-bg-color: #28292e; /* cor secundaria do fundo da página */
     --primary-border-color: #28292e; /* cores primarias das bordas */
     --secundary-border-color: #28292e; /* cores secundarias das bordas */
 
-    --title-color: #f0f0f0; /* cores dos titulos */
-    --text-color: #9a9a9c; /* cores dos textos */
-    --link-color: #9a9a9c; /* cores dos links */
-    --icon-color: #c7c8c9; /* cores dos icones */ 
+    --title-color: #b3b3b3; /* cores dos titulos */
+    --text-color: #b3b3b3; /* cores dos textos */
+    --link-color: #bebebe; /* cores dos links */
+    --icon-color: #bebebe; /* cores dos icones */ 
 
 }
 
@@ -60,7 +60,7 @@ html [data-theme='light'] .tecnologias-logo{
     vertical-align: baseline; /* alinhamento vertical */ 
     list-style: none; /* estilo de listas (tópicos em disco, números romanos...) */ 
     scrollbar-width: thin; /* compriomento da barra lateral direita */ 
-    scrollbar-color: var( --secondary-bg-color); /* cor da barra */ 
+    scrollbar-color: var( --secondary-bg-color) transparent; /* cor da barra */ 
 }
 body { /* body estilização do corpo */
     background: var( --primary-bg-color);  /* cor do corpo da pagina */ 
@@ -68,12 +68,60 @@ body { /* body estilização do corpo */
     color: var(--text-color);
 }
 
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+a:hover {
+    color: var(--primary-color);
+}
+i {
+    color: var(--icon-color);
+}
+b {
+    font-weight: 400;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.4rem;
+}
+h3 {
+    font-size: 1.55rem;
+    text-align: left;
+}
+h4 {
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 1.15rem;
+    text-align: left;
+}
+h1, h2, h3 {
+    font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: var(--title-color);
+    font-weight: 200;
+}
+p, span, li {
+    font-size: 1rem;
+}
+p {
+    text-align: justify;
+}
+
+
 /* conteudo extra */ 
 
 #header {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    /* Coloca o conteúdo em linha e permite a quebra de linha. */
+    justify-content: space-between; 
+    /* Os itens dentro do container flexível serão distribuídos de maneira uniforme ao longo do eixo principal, com espaços iguais entre eles.  */
     align-items: center;
     width: 100%;
     padding: 0.5rem 1rem;
@@ -89,3 +137,81 @@ body { /* body estilização do corpo */
     width: 3.25rem; /* tamanho da altura */ /* o rem ajuda nos sites responsivos, ajustando o tamanho da tela de acordo com cada dispositivo */
     height: 3.25rem; /* tamanho da largura */
 }
+/* icones */
+#toggleTheme {
+    font-size: 1.5rem; /* tamanho do botão dark/light */
+    color: var(--icon-color); /* cor do icone */
+    cursor: pointer; /* cursor do botão */
+    transition: ease-in-out .4s; /* efeito do cursor */
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    background: var(--primary-bg-color);
+    gap: 1rem;
+}
+.menu-item {
+    width: 100%;
+    
+}
+.menu-link {
+    display: flex;
+    align-items: center;
+    gap: .5rem; /* espaço dos itens */
+}
+.menu-mobile {
+    width: 100vw; /* visualização em tamanho unico de 100 em qualquer dispositivo, adaptação */
+    position: fixed; /* posição do menu */
+    bottom: 0;
+    justify-content: space-between; 
+    border-top: 1px solid var(--primary-border-color)
+}
+.menu-mobile .menu-link {
+    flex-direction: column; /* define a direção dos itens em uma coluna vertical */
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+.menu-link.active .menu-icon,
+.menu-link.active .menu-text, 
+.menu-link:hover .menu-icon,
+.menu-link:hover .menu-text {
+    color: var(--primary-color);
+}
+
+.menu-icon, .menu-text {
+    color: var(--text-color);
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+}
+.menu-text {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+.header-nav {       /* menu desktop */
+    display: none;
+}
+.menu-principal {
+    gap: 1rem;
+}
+.menu-social {
+    gap: 1rem;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    width: 100%;
+    background: transparent;
+    border-radius: 3rem;
+    border: none;
+    padding: 0.875rem 1.5rem;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+

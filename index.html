@@ -16,6 +16,9 @@
 <body>
     <header id="header"> <!-- cabeçalho -->
         <nav class="header-nav"> <!-- classe para mandar estilos no geral -->
+            <!-- "header-nav" - Isso pode ser útil quando você deseja ocultar
+        a navegação de um cabeçalho, por exemplo, 
+        em certos dispositivos ou resoluções de tela. -->
             <ul class="menu menu-principal"> <!-- classe para mandar estilos no geral (responsivo) -->
                 <li class="menu-item">
                     <a href="#home" class="menu-link active"> 
@@ -24,17 +27,17 @@
                 </li>
                 <li class="menu-item">
                     <a href="#Projetos" class="menu-link"> <!-- Criação de link para retornar a aba projetos -->
-                        <span> Projeto </span>
+                        <span class="menu-text"> Projeto </span>
                     </a>
                 </li>
                 <li class="menu-item">
                     <a href="#Sobre" class="menu-link"> <!-- Criação de link para retornar a aba sobre -->
-                        <span> Sobre </span>
+                        <span class="menu-text"> Sobre </span>
                     </a>
                 </li>
                 <li class="menu-item">
                     <a href="#Contato" class="menu-link"> <!-- Criação de link para retornar a aba contato -->
-                        <span> Contato </span> 
+                        <span class="menu-text"> Contato </span> 
                     </a>
                 </li>
             </ul>
@@ -49,7 +52,76 @@
 
         </div>
     </header>   <!-- fim cabeçalho -->
-   
+    
+    <!-- menu mobile -->    
+<nav class="nav-mobile">
+    <ul class="menu menu-mobile">
+        
+        <li class="menu-item">
+            <a class="menu-link active" href="#home">
+                <i class="menu-icon bi bi-house-door"> </i>
+                <span class="menu-text"> Home </span>
+            </a>
+        </li>
+
+        <li class="menu-item">
+            <a class="menu-link " href="#projetos">
+                <i class="menu-icon bi bi-window-stack"> </i>
+                <span class="menu-text"> Projetos </span>
+            </a>
+        </li>
+
+        <li class="menu-item">
+            <a class="menu-link " href="#sobre">
+                <i class="menu-icon bi bi-person"> </i>
+                <span class="menu-text"> Sobre </span>
+            </a>
+        </li>
+
+        <li class="menu-item">
+            <a class="menu-link " href="#contato">
+                <i class="menu-icon bi bi-envelope"> </i>
+                <span class="menu-text"> Contato </span>
+            </a>
+        </li>
+
+    </ul>
+
+</nav> <!-- Fim menu mobile -->
+
+<main id="home">
+    <div class="main-content">
+
+        <h1> <b> Soluções Criativas & </b> Dev Front End. </h1>
+        <p> Kevin Dias, Osasco - SP, Análise e Desenvolvimento de Sistemas </p>
+        <ul class="menu menu-redes sociais">
+            
+            <li>
+                <a class="menu-link" href="https://github.com/DiasKevin121" target="_blank"> 
+                    <i class="menu-icon bi bi-github"> </i>
+                </a>
+            </li>
+
+            <li>
+                <a class="menu-link" href="" target="_blank"> 
+                    <i class="menu-icon bi-linkedin"> </i>
+                </a>
+            </li>
+
+        </ul>
+
+        <a href="#projetos">
+            <button class="btn btn-primary">
+                <span> Ver Projetos </span>
+                <i class="bi bi-arrow-down-right"> </i>
+            </button>
+
+        </a>
+
+    </div>
+
+
+</main>
 
   
 

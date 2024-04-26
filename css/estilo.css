@@ -10,7 +10,7 @@
     --text-color-sub-menu: rgb(255, 255, 255); /* cores do menu */ 
     --secondary-bg-color: #28292e; /* cor secundaria do fundo da página */
     --primary-border-color: #28292e; /* cores primarias das bordas */
-    --secundary-border-color: #28292e; /* cores secundarias das bordas */
+    --secondary-border-color: #56575a; /* cores secundarias das bordas */
 
     --title-color: #b3b3b3; /* cores dos titulos */
     --text-color: #b3b3b3; /* cores dos textos */
@@ -144,29 +144,30 @@ p {
     transition: ease-in-out .4s; /* efeito do cursor */
 }
 
-.menu {
+.menu { /* estilização dos itens do menu principal e menu mobile */
     display: flex;
     align-items: center;
     background: var(--primary-bg-color);
     gap: 1rem;
 }
-.menu-item {
+.menu-item { /* espaçamento dos itens dentro do menu */
     width: 100%;
     
 }
-.menu-link {
+.menu-link {/* estilização principal do menu mobile, menu principal e icones github */
     display: flex;
     align-items: center;
     gap: .5rem; /* espaço dos itens */
 }
-.menu-mobile {
+.menu-mobile { /* estilização de linha horizontal do menu mobile */
     width: 100vw; /* visualização em tamanho unico de 100 em qualquer dispositivo, adaptação */
     /*position: fixed; posição do menu */
     bottom: 0;
     justify-content: space-between; 
     border-top: 1px solid var(--primary-border-color)
+    
 }
-.menu-mobile .menu-link {
+.menu-mobile .menu-link { /* estilização do link dentro do menu mobile */
     flex-direction: column; /* define a direção dos itens em uma coluna vertical */
     justify-content: center;
     padding: 0.5rem 1rem;
@@ -182,23 +183,23 @@ p {
     color: var(--text-color);
 }
 
-.menu-icon {
+.menu-icon { /* estilização do tamanho da fonte do menu mobile */
     font-size: 1.5rem;
 }
-.menu-text {
+.menu-text { /* estilização do tamanho da fonte do menu principal e menu mobile */
     font-size: .75rem;
     text-transform: uppercase;
 }
 .header-nav {       /* menu desktop */
     display: center;
 }
-.menu-principal {
+.menu-principal { /* espaçamento dos icones do menu principal */
     gap: 1rem;
 }
 .menu-social {
     gap: 1rem;
 }
-.btn {
+.btn { /* estilização principal do botão ver projetos */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,38 +213,38 @@ p {
     cursor: pointer;
     color: var(--primary-color);
 }
-.btn:hover {
+.btn:hover { /* estilização do hover do botão ver projetos */
     transform: scale(1.05);
     transition: ease-in-out .3s;
 }
-.btn span, .btn i {
+.btn span, .btn i { /* estilização do tamahho da fonte do botão ver projetos */
     font-size: 1.25rem;
     text-transform: uppercase;
 }
-.btn-primary span {
+.btn-primary span { /* estilização da cor do botão ver projetos */
     color: var(--primary-color);
 }
-.btn-primary {
+.btn-primary { /* estilização da borda do botão ver projetos */
     border: 1px solid var(--primary-color);
 }
-#home {
+#home { /* estilização do container do video */
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-.main-content {
+.main-content { /* estilização do container pai (h1, h2, h3 e video) */
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
-.video iframe {
+.video iframe { /* estilização do tamanho do video dentro do container */
     width: 100%;
     aspect-ratio: 16/9;
 }
-#home, .proejtos, .sobre, .contato {
+#home, .projetos, .sobre, .contato { /* estilização da distancia dos conteudos da borda da pagina */
     padding: 2.5rem 1rem;
 }
-.tecnologias {
+.tecnologias { /* estilização dos icones html, css... */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -253,27 +254,28 @@ p {
     background: var(--secondary-bg-color);
     margin-top: -5.5rem;
 }
-.tecnologias h2 {
+.tecnologias h2 { /* estilização do h2 (conhecimentos nas principais... */
     font-size: 2rem;
     text-transform: none;
     letter-spacing: normal;
     text-align: start; /* alinhamento da esquerda para direita */
 }
-.tecnologias-lista { /*  */
+.tecnologias-lista { /* estilização de espaçamento dos icones das tecnologias */
     display: flex;
     flex-flow: row wrap;
     gap: .5rem;    
 }
-.tecnologias-item {
+.tecnologias-item { /* estilização dos icones item tecnologias */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 4.8rem;
     height: 4.8rem;
-    border: 1px solid var(--secondary-border-color);
+    border: 3px solid var(--secondary-border-color);
     border-radius: 5rem;
 }
-.tecnologia-logo {
+.tecnologia-logo { /* estilização do logo das tecnologias */
     height: 2.4rem;
 }
+

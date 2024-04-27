@@ -278,4 +278,70 @@ p {
 .tecnologia-logo { /* estilização do logo das tecnologias */
     height: 2.4rem;
 }
-
+.projetos { /* <section id="projetos" class="projetos"> */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.projetos-container { /* <div class="projetos-container"> */
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.projetos-card, .projetos-card-reverse { /*  <div class="projetos-card"> */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.card-cover { /* <img class="card-cover" src="img/projetos/josisbox.jpg" alt=""> */
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    object-position: center;
+}
+.card-body { /* <div class="card-body"> */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.card-title { /* <h3 class="card-title"> Josi's Box Ecommerce </h3> */
+    font-size: 2rem;
+    color: var(--title-color);
+    font-weight: 500;
+}
+.card.descricao { /* <p class="card-descricao"> Ecommerce de Livros </p> */
+    color: var(--text-color);
+}
+.card-lista , .sobre-lista {
+    margin-left: 1.25rem;
+}
+.card-item, .sobre-item {
+    list-style-type: disc;    
+}
+.card-button , .card-descricao {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.card-button .btn {
+    padding: .65rem 1.25rem;
+}
+.card-button .btn span {
+    font-size: 1rem;
+}
+.card-body .tecnologias-lista {
+    gap: .75rem;
+}
+.card-body .tecnologias-item {
+    width: 4rem;
+    height: 4rem;
+}
+.card-body .tecnologia-logo {
+    height: 2rem;
+}
+.projetos-btn { /* <span> Ver Todos os Projetos</span> */
+    width: auto;
+    margin: auto;
+}

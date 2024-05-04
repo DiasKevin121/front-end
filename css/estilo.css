@@ -161,7 +161,7 @@ p {
 }
 .menu-mobile { /* estilização de linha horizontal do menu mobile */
     width: 100vw; /* visualização em tamanho unico de 100 em qualquer dispositivo, adaptação */
-    /*position: fixed; posição do menu */
+    position: fixed; /* posição do menu */
     bottom: 0;
     justify-content: space-between; 
     border-top: 1px solid var(--primary-border-color)
@@ -363,5 +363,152 @@ p {
     object-position: center;
     pointer-events: none; /* bloqueia as interações com a imagem */
     border-radius: 50rem;
-    border: 1px solid;
+    border: 1px solid var(--primary-color);
+}
+.sobre-descricao { /* <div class="sobre-descricao"> */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+.sobre-icones { /* <div class="sobre-icones"> */
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+.sobre-icones i { /* <i class="bi bi-translate"> </i> */
+    font-size: 1.25rem;
+}
+.sobre-content2 .col1, /* <div class="sobre-content2"> <div class="col1"> <div class="col2"> */
+.sobre-content2 .col2 {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 2rem;
+}
+.sobre-content2 .col1 .row1, /* <div class="row1"> <div class="row2"> */
+.sobre-content2 .col1 .row2 { 
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.accordion-header { /* <button class="accordion-header start"> */
+    width: 100%;
+    display: flex;
+    padding: 0.75rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--primary-border-color);
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+    transition: ease-in-out 3s;
+}
+.accordion-header span { /* <button class="accordion-header start"> span */
+    color: var(--title-color);
+}
+.accordion-header.start { /* <button class="accordion-header start"> */
+    border-radius: 0.25rem 0.25rem 0rem 0rem;
+}
+.accordion-header.end, /*  <button class="accordion-header end"> */
+.accordion-item.active .accordion-body.end { /* <div class="accordion-item active"> <div class="accordion-body end"> */
+    border-radius: 0rem 0rem 0.25rem 0.25rem;
+}
+.accordion-item.active .accordion-item.end { 
+    border-radius: 0;
+}
+.accordion-body {
+    display: none;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .625rem; 
+    border: 1px solid var(--primary-border-color);
+}
+.accordion-item.active .accordion-header {
+    background: var(--secondary-bg-color);
+}
+
+.accordion-item.active .accordion-body {
+    display: flex;
+}
+.accordion-item.active .bi-caret-down-fill {
+    transform: rotate(180deg);
+}
+
+/* Contato rodapé */
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    border-top: 1px solid var(--primary-border-color);
+    border-bottom: 1px solid var(--primary-border-color);
+}
+.contato p {
+    text-align: center;
+}
+.contato .btn {
+    width: auto; /*  */
+}
+.contato .email {
+    text-transform: uppercase;
+}
+/* Rodapé */
+footer {
+    margin-bottom: 5rem;
+}
+footer p {
+    font-size: .875rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    #header {
+        position: fixed;
+        border-bottom: 1px solid var(--primary-border-color);
+        padding: 1rem 6rem;
+        background: var(--primary-bg-color);
+    }
+    .nav-mobile {
+        display: none;
+    }
+    .header-nav {
+        display: flex;
+    }
+    .header-nav, 
+    .header-toggle {
+        min-width: 30%;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    #home, .projetos, .sobre {
+        padding: 8rem 6rem 4rem 6rem;
+    }
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tecnologias {
+        padding: 6.25rem 6rem 2rem 6rem;
+        margin-top: -6rem;
+    }
+
+
+
+    .contato {
+        padding: 6rem;
+    }
+    .contato p {
+        width: 80%;
+    }
+
 }

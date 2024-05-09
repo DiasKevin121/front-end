@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap');
 
 /* Raiz do html tema do site dark */ 
-:root, :root[data-theme='dark'] {
+:root,
+:root[data-theme='dark'] {
     --primary-color: #b3b3b3; /* cor de texto */ 
     --secondary-bg-color: rgb(255, 255, 255); /* 2º cor de texto */
     --primary-bg-color: #111217; /* cor de fundo */ 
@@ -12,11 +13,10 @@
     --primary-border-color: #28292e; /* cores primarias das bordas */
     --secondary-border-color: #56575a; /* cores secundarias das bordas */
 
-    --title-color: #b3b3b3; /* cores dos titulos */
-    --text-color: #b3b3b3; /* cores dos textos */
-    --link-color: #bebebe; /* cores dos links */
-    --icon-color: #bebebe; /* cores dos icones */ 
-
+    --title-color: #f0f0f0; /* cores dos titulos */
+    --text-color: #9a9a9c; /* cores dos textos */
+    --link-color: #56575a; /* cores dos links */
+    --icon-color: #c7c8c9; /* cores dos icones */ 
 }
 
 /* Raiz do html tema do site light */ 
@@ -46,7 +46,7 @@ que podem ser reutilizados em todo o seu CSS e facilmente atualizadfos de um
 unico lugar 
 */ 
 
-html [data-theme='light'] .brand-logo {
+html [data-theme='light'] .logo {
     filter: invert(1);
 }
 html [data-theme='light'] .tecnologias-logo{
@@ -57,7 +57,7 @@ html [data-theme='light'] .tecnologias-logo{
     margin: 0px; /* margem superior */
     padding: 0px; /* preenchimento // espaçamento dos elementos */ 
     box-sizing: border-box; /* tamanho da caixa (nav) */
-    vertical-align: baseline; /* alinhamento vertical */ 
+    /*vertical-align: baseline;  alinhamento vertical */ 
     list-style: none; /* estilo de listas (tópicos em disco, números romanos...) */ 
     scrollbar-width: thin; /* compriomento da barra lateral direita */ 
     scrollbar-color: var( --secondary-bg-color) transparent; /* cor da barra */ 
@@ -191,7 +191,7 @@ p {
     text-transform: uppercase;
 }
 .header-nav {       /* menu desktop */
-    display: center;
+    display: none;
 }
 .menu-principal { /* espaçamento dos icones do menu principal */
     gap: 1rem;
@@ -275,7 +275,7 @@ p {
     border: 3px solid var(--secondary-border-color);
     border-radius: 5rem;
 }
-.tecnologia-logo { /* estilização do logo das tecnologias */
+.tecnologias-logo { /* estilização do logo das tecnologias */
     height: 2.4rem;
 }
 .projetos { /* <section id="projetos" class="projetos"> */
@@ -283,12 +283,12 @@ p {
     flex-direction: column;
     gap: 2rem;
 }
-.projetos-container { /* <div class="projetos-container"> */
+.projeto-container { /* <div class="projetos-container"> */
     display: flex;
     flex-direction: column;
     gap: 4rem;
 }
-.projetos-card, .projetos-card-reverse { /*  <div class="projetos-card"> */
+.projeto-card { /*  <div class="projetos-card"> */
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -309,7 +309,7 @@ p {
 .card-title { /* <h3 class="card-title"> Josi's Box Ecommerce </h3> */
     font-size: 2rem;
     color: var(--title-color);
-    font-weight: 500;
+    font-weight: 400;
 }
 .card.descricao { /* <p class="card-descricao"> Ecommerce de Livros </p> */
     color: var(--text-color);
@@ -318,7 +318,7 @@ p {
     margin-left: 1.25rem;
 }
 .card-item, .sobre-item {
-    list-style-type: disc;    
+    list-style: disc;    
 }
 .card-button , .card-descricao {
     display: flex;
@@ -358,12 +358,12 @@ p {
     gap: 2rem;
 }
 .sobre-logo { /* <img class="sobre-logo" src="img/dk.png" alt=""> */
-    width: 50%;
+    width: 100%;
     object-fit: cover;
     object-position: center;
     pointer-events: none; /* bloqueia as interações com a imagem */
     border-radius: 50rem;
-    border: 1px solid var(--primary-color);
+    border: 8px solid var(--primary-color);
 }
 .sobre-descricao { /* <div class="sobre-descricao"> */
     display: flex;
@@ -528,7 +528,7 @@ footer p {
     }
     .sobre-content1, .sobre-content2 {
         display: grid;
-        grid-template-columns: 40% 80%;
+        grid-template-columns: 34% 60%;
         justify-content: flex-start;
         align-items: flex-start;
         gap: 4rem;
@@ -565,7 +565,7 @@ footer p {
     .tecnologias-lista {
         gap: 1rem;
     }
-    .tecnologias-item {
+    .tecnologia-item {
         width: 6rem;
         height: 6rem;
     }

@@ -110,7 +110,7 @@ p, span, li {
     font-size: 1rem;
 }
 p {
-    text-align: justify;
+    text-align: left ;
 }
 
 
@@ -595,6 +595,6 @@ footer p {
         padding: 12rem 15rem 2rem;
     }
     .tecnologias, .projetos, .sobre {
-        
+      padding: 10rem 15rem 4rem;  
     }
 }

@@ -17,3 +17,19 @@ function changeTheme () {
 
 toggleTheme.addEventListener("click", changeTheme);
 /* fim da função mudar tema do site */
+
+accordionHeaders.forEach(header => { /* inicio da função do accordion */
+    header.addEventListener("click", () => {
+        const accordionItem = header.parentElement; 
+        const accordionActive = accordionItem.classList.contains ("active");
+
+        accordionActive ? accordionItem.classList.remove("active") : accordionItem.classList.add("active");
+    })
+}) /* fim da função do accordion */
+
+menuLinks.forEach(item => {
+    item.addEventListener("click", () => {
+        menuLinks.forEach(i => i.classList.remove("active"));
+        item.classList.add("active");
+    })
+})

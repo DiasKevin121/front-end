@@ -7,14 +7,13 @@
     --primary-color: #f0f0f0; /* cor de texto */ 
     --primary-bg-color: #131313; /* cor de fundo */ 
     /* bg= background = plano de fundo */ 
-    --text-color-sub-menu: rgb(255, 255, 255); /* cores do menu */ 
     --secondary-bg-color: #28292e; /* cor secundaria do fundo da página */
     --primary-border-color: #28292e; /* cores primarias das bordas */
     --secondary-border-color: #56575a; /* cores secundarias das bordas */
 
     --title-color: #f0f0f0; /* cores dos titulos */
-    --text-color: #9a9a9c; /* cores dos textos */
-    --link-color: #56575a; /* cores dos links */
+    --text-color: #56575a; /* cores dos textos */
+    --link-color: #c7c8c9; /* cores dos links */
     --icon-color: #c7c8c9; /* cores dos icones */ 
 }
 
@@ -27,10 +26,9 @@
     --secondary-border-color: #9a9a9c; 
 
     --title-color: #0b0b0f; 
-    --text-color: #28292e; 
-    --link-color: #28292e;
-    --icon-color: #56575a;
-
+    --text-color: #a3a2a2; 
+    --link-color: #000000;
+    --icon-color: #1f1f1f;
 }
 
 /* 
@@ -45,10 +43,10 @@ que podem ser reutilizados em todo o seu CSS e facilmente atualizadfos de um
 unico lugar 
 */ 
 
-html [data-theme='light'] .logo {
+html[data-theme='light'] .logo {
     filter: invert(1);
 }
-html [data-theme='light'] .tecnologias-logo{
+html[data-theme='light'] .tecnologia-logo{
     filter: invert(80%);
 }
 /* (*) significa reset do CSS */ 
@@ -175,11 +173,12 @@ p {
 .menu-link.active .menu-text, 
 .menu-link:hover .menu-icon,
 .menu-link:hover .menu-text {
-    color: var(--primary-color);
+    color: var(--link-color);
 }
 
 .menu-icon, .menu-text {
     color: var(--text-color);
+    font-weight: 600;
 }
 
 .menu-icon { /* estilização do tamanho da fonte do menu mobile */
@@ -274,7 +273,7 @@ p {
     border: 3px solid var(--secondary-border-color);
     border-radius: 5rem;
 }
-.tecnologias-logo { /* estilização do logo das tecnologias */
+.tecnologia-logo { /* estilização do logo das tecnologias */
     height: 2.4rem;
 }
 .projetos { /* <section id="projetos" class="projetos"> */

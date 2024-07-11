@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dias Kevin | Portfolio </title> <!--tag titulo -->
     <link rel="shortcut icon" href="img/favicon.ico"><!-- icone da guia navegador -->
-    <link rel="stylesheet" href="css/estilo.css"> <!-- link do css -->    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet"><!-- link botstrap -->
+    <link rel="stylesheet" href="css/estilo.css"> <!-- link do css -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap"
+        rel="stylesheet"><!-- link botstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
     <header id="header"> <!-- cabeçalho -->
         <nav class="header-nav"> <!-- classe para mandar estilos no geral -->
             <!-- "header-nav" - Isso pode ser útil quando você deseja ocultar
-        a navegação de um cabeçalho, por exemplo, em certos dispositivos ou resoluções de tela. -->
+         a navegação de um cabeçalho, por exemplo, em certos dispositivos ou resoluções de tela. -->
             <ul class="menu menu-principal"> <!-- classe para mandar estilos no geral (responsivo) -->
                 <li class="menu-item">
                     <a class="menu-link active" href="#home"> <!-- menu principal desktop -->
@@ -31,8 +35,8 @@
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a  class="menu-link" href="#contato"> <!-- Criação de link para retornar a aba contato -->
-                        <span class="menu-text"> Contato </span> 
+                    <a class="menu-link" href="#contato"> <!-- Criação de link para retornar a aba contato -->
+                        <span class="menu-text"> Contato </span>
                     </a>
                 </li>
             </ul>
@@ -40,113 +44,117 @@
 
         <div class="header-logo"> <!-- area do logo -->
             <a href="#home"> <!-- imagem do logo que retorna a home -->
-                <img class="logo" src="img/modelo 2.png" alt=""> <!-- alt opção de criar texto alternativo para usabilidade -->
-            </a> 
+                <img class="logo" src="img/modelo 2.png" alt="">
+                <!-- alt opção de criar texto alternativo para usabilidade -->
+            </a>
         </div> <!-- Fim area do logo -->
-        
+
         <div class="header-toggle"><!-- area do botão do tema dark/light -->
             <i id="toggleTheme" class="bi bi-sun"> </i>
         </div>
-    </header>   <!-- fim cabeçalho -->
-    
+    </header> <!-- fim cabeçalho -->
+
 
     <nav class="nav-mobile"> <!-- menu mobile -->
-    <ul class="menu menu-mobile">
-        
-        <li class="menu-item">
-            <a class="menu-link active" href="#home">
-                <i class="menu-icon bi bi-house-door"> </i>
-                <span class="menu-text"> Home </span>
-            </a>
-        </li>
+        <ul class="menu menu-mobile">
 
-        <li class="menu-item">
-            <a class="menu-link " href="#projetos">
-                <i class="menu-icon bi bi-window-stack"> </i>
-                <span class="menu-text"> Projetos </span>
-            </a>
-        </li>
+            <li class="menu-item">
+                <a class="menu-link active" href="#home">
+                    <i class="menu-icon bi bi-house-door"> </i>
+                    <span class="menu-text"> Home </span>
+                </a>
+            </li>
 
-        <li class="menu-item">
-            <a class="menu-link " href="#sobre">
-                <i class="menu-icon bi bi-person"> </i>
-                <span class="menu-text"> Sobre </span>
-            </a>
-        </li>
+            <li class="menu-item">
+                <a class="menu-link " href="#projetos">
+                    <i class="menu-icon bi bi-window-stack"> </i>
+                    <span class="menu-text"> Projetos </span>
+                </a>
+            </li>
 
-        <li class="menu-item">
-            <a class="menu-link " href="#contato">
-                <i class="menu-icon bi bi-envelope"> </i>
-                <span class="menu-text"> Contato </span>
-            </a>
-        </li>
-    </ul>
+            <li class="menu-item">
+                <a class="menu-link " href="#sobre">
+                    <i class="menu-icon bi bi-person"> </i>
+                    <span class="menu-text"> Sobre </span>
+                </a>
+            </li>
+
+            <li class="menu-item">
+                <a class="menu-link " href="#contato">
+                    <i class="menu-icon bi bi-envelope"> </i>
+                    <span class="menu-text"> Contato </span>
+                </a>
+            </li>
+        </ul>
     </nav> <!-- Fim menu mobile -->
 
-<main id="home"> <!-- container pai -->
-    <div class="main-content">
+    <main id="home"> <!-- container pai -->
+        <div class="main-content">
 
-        <h1><b>Soluções Criativas &</b>Dev Front End.</h1> <!-- titulo principal -->
-        <p> Kevin Dias, Osasco-SP, Análise e Desenvolvimento de Sistemas </p>
-        <ul class="menu menu-redes sociais">
-            
-            <li>
-                <a class="menu-link" href="https://github.com/DiasKevin121" target="_blank"> 
-                    <i class="menu-icon bi bi-github"> </i> <!-- icone github -->
-                </a>
+            <h1><b>Soluções Criativas &</b>Dev Front End.</h1> <!-- titulo principal -->
+            <p> Kevin Dias, Osasco-SP, Análise e Desenvolvimento de Sistemas </p>
+            <ul class="menu menu-redes sociais">
+
+                <li>
+                    <a class="menu-link" href="https://github.com/DiasKevin121" target="_blank">
+                        <i class="menu-icon bi bi-github"> </i> <!-- icone github -->
+                    </a>
+                </li>
+
+                <li>
+                    <a class="menu-link" href="" target="_blank">
+                        <i class="menu-icon bi-linkedin"> </i><!-- icone likedin -->
+                    </a>
+                </li>
+
+            </ul>
+
+            <a href="#projetos"><!-- botão ver projetos -->
+                <button class="btn btn-primary">
+                    <span> Ver Projetos </span>
+                    <i class="bi bi-arrow-down-right"> </i>
+                </button>
+            </a>
+        </div> <!-- Fim main-content -->
+
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/EAjWeHn01Z8" title="Eu sendo coração mole e o Google me entende"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </main> <!-- Fim extrutua main -->
+
+    <section class="tecnologias"> <!-- tecnologias dentro do container -->
+
+        <h2> Conhecimento nas principais tecnologias do mercado. </h2> <!-- titulo -->
+        <ul class="tecnologias-lista">
+            <li class="tecnologias-item">
+                <img class="tecnologia-logo" src="img/tecnologias/HTML5.svg" alt="">
             </li>
 
-            <li>
-                <a class="menu-link" href="" target="_blank"> 
-                    <i class="menu-icon bi-linkedin"> </i><!-- icone likedin -->
-                </a>
+            <li class="tecnologias-item">
+                <img class="tecnologia-logo" src="img/tecnologias/Css.svg" alt="">
             </li>
 
+            <li class="tecnologias-item">
+                <img class="tecnologia-logo" src="img/tecnologias/Javascript.svg" alt="">
+            </li>
+
+            <li class="tecnologias-item">
+                <img class="tecnologia-logo" src="img/tecnologias/Bootstrap.svg" alt="">
+            </li>
         </ul>
+    </section> <!-- Fim da seção tecnologias -->
 
-        <a href="#projetos"><!-- botão ver projetos -->
-            <button class="btn btn-primary">
-                <span> Ver Projetos </span>
-                <i class="bi bi-arrow-down-right"> </i>
-            </button>
-        </a>
-    </div> <!-- Fim main-content -->
+    <!-- direcionamento dos links dentro do menu principal -->
+    <section id="projetos" class="projetos">
+        <h2>Projetos</h2>
+        <div class="projeto-container">
 
-    <div class="video">
-        <iframe src="https://www.youtube.com/embed/EAjWeHn01Z8" title="Eu sendo coração mole e o Google me entende" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-</main> <!-- Fim extrutua main -->
+            <div class="projeto-card"> <!-- 1º parte -->
+                <img class="card-cover" src="img/projetos/josisbox.jpg" alt="">
 
-<section class="tecnologias"> <!-- tecnologias dentro do container -->
-    
-    <h2> Conhecimento nas principais tecnologias do mercado. </h2> <!-- titulo -->
-    <ul class="tecnologias-lista">
-        <li class="tecnologias-item">
-            <img class="tecnologia-logo" src="img/tecnologias/HTML5.svg" alt="">
-        </li>
-        
-        <li class="tecnologias-item">
-            <img class="tecnologia-logo" src="img/tecnologias/Css.svg" alt="">
-        </li>
-        
-        <li class="tecnologias-item">
-            <img class="tecnologia-logo" src="img/tecnologias/Javascript.svg" alt="">
-        </li>
-
-        <li class="tecnologias-item">
-            <img class="tecnologia-logo" src="img/tecnologias/Bootstrap.svg" alt="">
-        </li>
-    </ul>
-</section> <!-- Fim da seção tecnologias -->
-
-<!-- direcionamento dos links dentro do menu principal -->
-<section id="projetos" class="projetos">
-    <h2>Projetos</h2>
-    <div class="projeto-container">
-                
-        <div class="projeto-card"> <!-- 1º parte -->
-            <img class="card-cover" src="img/projetos/josisbox.jpg" alt="">    
-                
                 <div class="card-body">
 
                     <h3 class="card-title"> Josi's Box Ecommerce </h3>
@@ -164,15 +172,15 @@
                     </ul>
 
                     <ul class="tecnologias-lista"> <!-- lista dos icones das tecnologias -->
-                        
+
                         <li class="tecnologias-item">
                             <img class="tecnologia-logo" src="img/tecnologias/Angular.svg" alt="">
                         </li>
-                        
+
                         <li class="tecnologias-item">
                             <img class="tecnologia-logo" src="img/tecnologias/Javascript.svg" alt="">
                         </li>
-                        
+
                         <li class="tecnologias-item">
                             <img class="tecnologia-logo" src="img/tecnologias/HTML5.svg" alt="">
                         </li>
@@ -185,197 +193,206 @@
 
                     <div class="card-button"> <!-- botão prévia e repositório -->
                         <button class="btn btn-primary">
-                            <a href="https://www.amazon.com.br/Livros/b/?ie=UTF8&node=6740748011&ref_=nav_cs_books" target="_blank">
-                            
+                            <a href="https://www.amazon.com.br/s?k=LIVROS&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=23AA72I4IGGL6&sprefix=livros%2Caps%2C199&ref=nb_sb_noss_1"
+                                target="_blank">
+
+                                <span> Prévia </span>
+                                <i class="bi bi-arrow-down-right"> </i>
+                            </a>
+                        </button>
+                        <button class="btn">
+                            <a href="https://github.com/DiasKevin121/front-end" target="_blank">
+                                <span> Repositório </span>
+                            </a>
+                        </button> <!-- fim botão prévia e repositório -->
+                    </div>
+                </div> <!-- fim card body -->
+            </div>
+        </div>
+        <div class="projeto-card card-reverse"> <!-- 2º parte -->
+            <img class="card-cover" src="img/projetos/portfolio.PNG" alt="">
+
+            <div class="card-body">
+
+                <h3 class="card-title"> Portfolio Pessoal </h3>
+                <p class="card-descricao"> A história por trás do meu Portfolio </p>
+                <ul class="card-lista">
+
+                    <li class="card-item">
+                        Postagens relacionadas em Destaque;
+                    </li>
+                    <li class="card-item">
+                        Seção dos Projetos;
+                    </li>
+                    <li class="card-item">
+                        Biografia do Autor;
+                    </li>
+                </ul>
+
+                <ul class="tecnologias-lista"> <!-- lista dos icones das tecnologias -->
+                    <li class="tecnologias-item">
+                        <img class="tecnologia-logo" src="img/tecnologias/HTML5.svg" alt="">
+                    </li>
+
+                    <li class="tecnologias-item">
+                        <img class="tecnologia-logo" src="img/tecnologias/Css.svg" alt="">
+                    </li>
+
+                    <li class="tecnologias-item">
+                        <img class="tecnologia-logo" src="img/tecnologias/Javascript.svg" alt="">
+                    </li>
+
+                    <li class="tecnologias-item">
+                        <img class="tecnologia-logo" src="img/tecnologias/Bootstrap.svg" alt="">
+                    </li>
+
+                </ul> <!-- fim da lista dos icones das tecnologias -->
+
+                <div class="card-button"> <!-- botão prévia e repositório -->
+                    <button class="btn btn-primary">
+                        <a href="https://diaskevin121.github.io/front-end/" target="_blank">
+
                             <span> Prévia </span>
                             <i class="bi bi-arrow-down-right"> </i>
-                            </a> 
-                        </button>
-                    </div>
+                        </a>
+                    </button>
+
                     <button class="btn">
-                        <a href="https://github.com/DiasKevin121/teste-josis" target="_blank"> 
-                        <span> Repositório </span>
+                        <a href="https://github.com/DiasKevin121/front-end" target="_blank">
+                            <span> Repositório </span>
+                        </a>
+                    </button> <!-- fim botão prévia e repositório -->
+                </div>
+            </div> <!-- fim card body -->
+        </div>
+
+        <div class="projeto-card"> <!-- 3º parte  -->
+            <img class="card-cover" src="img/projetos/games-store.jpg" alt="">
+
+            <div class="card-body">
+
+                <h3 class="card-title"> Game Store </h3>
+                <p class="card-descricao"> Loja online de Games </p>
+                <ul class="card-lista">
+                    <li class="card-item">
+                        Listagem de Favoritos;
+                    </li>
+                    <li class="card-item">
+                        Carrinho de Compras;
+                    </li>
+                    <li class="card-item">
+                        Filtragem por Preço e Categoria;
+                    </li>
+                </ul>
+
+                <ul class="tecnologias-lista"> <!-- lista dos icones das tecnologias -->
+                    <li class="tecnologias-item">
+                        <img class="tecnologia-logo" src="img/tecnologias/Angular.svg" alt="">
+                    </li>
+
+                    <li class="tecnologias-item">
+                        <img class="tecnologia-logo" src="img/tecnologias/TypeScript.svg" alt="">
+                    </li>
+
+                    <li class="tecnologias-item">
+                        <img class="tecnologia-logo" src="img/tecnologias/Bootstrap.svg" alt="">
+                    </li>
+
+                    <li class="tecnologias-item">
+                        <img class="tecnologia-logo" src="img/tecnologias/Javascript.svg" alt="">
+                    </li>
+
+                </ul> <!-- fim da lista dos icones das tecnologias -->
+
+                <div class="card-button"> <!-- botão prévia e repositório -->
+                    <button class="btn btn-primary">
+                        <a href="https://store.epicgames.com/pt-BR/" target="_blank">
+
+                            <span> Prévia </span>
+                            <i class="bi bi-arrow-down-right"> </i>
+                        </a>
+                    </button>
+
+                    <button class="btn">
+                        <a href="https://github.com/DiasKevin121/front-end" target="_blank">
+                            <span> Repositório </span>
                         </a>
                     </button> <!-- fim botão prévia e repositório -->
                 </div> <!-- fim card body -->
-        </div>   
-    </div>        
-                <div class="projeto-card card-reverse"> <!-- 2º parte -->
-                    <img class="card-cover" src="img/projetos/portfolio.PNG" alt="">    
-                        
-                        <div class="card-body">
-        
-                            <h3 class="card-title"> Portfolio Pessoal </h3>
-                            <p class="card-descricao"> A história por trás do meu Portfolio </p>
-                            <ul class="card-lista">
-                                
-                                <li class="card-item">
-                                    Postagens relacionadas em Destaque;
-                                </li>
-                                <li class="card-item">
-                                    Seção dos Projetos;
-                                </li>
-                                <li class="card-item">
-                                    Biografia do Autor;
-                                </li>
-                            </ul>
-        
-                            <ul class="tecnologias-lista"> <!-- lista dos icones das tecnologias -->
-                                <li class="tecnologias-item">
-                                    <img class="tecnologia-logo" src="img/tecnologias/HTML5.svg" alt="">
-                                </li>
-                                
-                                <li class="tecnologias-item">
-                                    <img class="tecnologia-logo" src="img/tecnologias/Css.svg" alt="">
-                                </li>
-                                
-                                <li class="tecnologias-item">
-                                    <img class="tecnologia-logo" src="img/tecnologias/Javascript.svg" alt="">
-                                </li>
-        
-                                <li class="tecnologias-item">
-                                    <img class="tecnologia-logo" src="img/tecnologias/Bootstrap.svg" alt="">
-                                </li>
-        
-                            </ul> <!-- fim da lista dos icones das tecnologias -->
-        
-                            <div class="card-button"> <!-- botão prévia e repositório -->
-                                <button class="btn btn-primary">
-                                    <a href=" https://diaskevin121.github.io/front-end/" target="_blank">
-                                    
-                                    <span> Prévia </span>
-                                    <i class="bi bi-arrow-down-right"> </i>
-                                    </a> 
-                                </button>
-                            
-                                <button class="btn">
-                                    <a href="https://github.com/DiasKevin121/front-end" target="_blank"> 
-                                        <span> Repositório </span>
-                                    </a>
-                                </button> <!-- fim botão prévia e repositório -->
-                            </div> 
-                        </div> <!-- fim card body -->       
-                </div>
-            
-                        <div class="projeto-card"> <!-- 3º parte  -->
-                            <img class="card-cover" src="img/projetos/games-store.jpg" alt="">    
-                                
-                                <div class="card-body">
-                
-                                    <h3 class="card-title"> Game Store </h3>
-                                    <p class="card-descricao"> Loja online de Games </p>
-                                    <ul class="card-lista">
-                                        <li class="card-item">
-                                            Listagem de Favoritos;
-                                        </li>
-                                        <li class="card-item">
-                                            Carrinho de Compras;
-                                        </li>
-                                        <li class="card-item">
-                                            Filtragem por Preço e Categoria;
-                                        </li>
-                                    </ul>
-                
-                                    <ul class="tecnologias-lista"> <!-- lista dos icones das tecnologias -->
-                                        <li class="tecnologias-item">
-                                            <img class="tecnologia-logo" src="img/tecnologias/Angular.svg" alt="">
-                                        </li>
-                                        
-                                        <li class="tecnologias-item">
-                                            <img class="tecnologia-logo" src="img/tecnologias/TypeScript.svg" alt="">
-                                        </li>
-                                        
-                                        <li class="tecnologias-item">
-                                            <img class="tecnologia-logo" src="img/tecnologias/Bootstrap.svg" alt="">
-                                        </li>
-                
-                                        <li class="tecnologias-item">
-                                            <img class="tecnologia-logo" src="img/tecnologias/Javascript.svg" alt="">
-                                        </li>
-                
-                                    </ul> <!-- fim da lista dos icones das tecnologias -->
-                
-                                    <div class="card-button"> <!-- botão prévia e repositório -->
-                                        <button class="btn btn-primary">
-                                            <a href="https://store.epicgames.com/pt-BR/" target="_blank">
-                                            
-                                            <span> Prévia </span>
-                                            <i class="bi bi-arrow-down-right"> </i>
-                                            </a> 
-                                        </button>
-                                    
-                                        <button class="btn">
-                                            <a href="https://github.com/DiasKevin121/teste-josis" target="_blank"> 
-                                            <span> Repositório </span>
-                                            </a>
-                                        </button> <!-- fim botão prévia e repositório -->
-                                    </div> <!-- fim card body -->            
-                                </div> <!-- projetos-card -->
-                        </div> <!-- Fim projeto container -->
-</section> <!-- fim da seção projetos -->
+            </div> <!-- projetos-card -->
+        </div> <!-- Fim projeto container -->
+    </section> <!-- fim da seção projetos -->
 
-<section id="sobre" class="sobre">
+    <section id="sobre" class="sobre">
 
-    <div class="sobre-content1">
-        
-        <img class="sobre-logo" src="img/dk.png" alt="">
+        <div class="sobre-content1">
 
-        <div class="sobre-descricao">
+            <img class="sobre-logo" src="img/dk.png" alt="">
 
-            <h2> Sobre Mim </h2>
-            <p>
-            Kevin Dias, estudante dedicado de Análise e Desenvolvimento de Sistemas apaixonado por transformar ideias em experiências digitais envolventes. Atualmente, estou focado em me especializar em Front-end, aprimorando minhas habilidades em HTML, CSS, JavaScript e Bootstrap. Possuo conhecimento básico nessas tecnologias e estou constantemente buscando oportunidades de aprendizado para aprimorar minha compreensão e aplicação prática. Determinado a contribuir para projetos inovadores, estou embarcando em cursos para aprimorar ainda mais meu conjunto de habilidades e enfrentar desafios emocionantes no mundo do desenvolvimento web. Entusiasta por tecnologia, moto e PC. 👨🏾‍💻🏍
-            </p>
+            <div class="sobre-descricao">
 
-            <div class="sobre-icones">
-                <i class="bi bi-translate"> </i>
-                <span>  <i>inglês: Técnico </i> </span>
-            </div>
-            
-            <div class="descricao-button"> 
-                <a href="https://br.linkedin.com/?src=go-pa&trk=sem-ga_campid.12619604099_asid.149519181115_crid.657343811716_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.1001773&mcid=6821526239111716925&cid=&gad_source=1&gclid=EAIaIQobChMIsaTeqo7rhQMVfmBIAB2-0AhyEAAYASAAEgKArfD_BwE&gclsrc=aw.ds" target="_blank">
-
-                    <button class="btn btn-primary">
-                        <span> Conecte-se Comigo </span>
-                        <i class="bi bi-arrow-up-right"> </i>
-                    </button>
-                </a>
-            </div>
-        
-        </div> <!-- sobre-descricao -->
-    </div> <!-- fim conteudo 1 -->
-
-    <div class="sobre-content2">
-
-        <div class="col1">
-            <div class="row1">
-                <h3> Formação </h3>
-                <h4> Análise e Desenvolvimento de Sistemas</h4>
-                <span> Fev 2023 - Atualmente </span>
+                <h2> Sobre Mim </h2>
+                <p>
+                    Kevin Dias, estudante dedicado de Análise e Desenvolvimento de Sistemas apaixonado por transformar
+                    ideias em experiências digitais envolventes. Atualmente, estou focado em me especializar em
+                    Front-end, aprimorando minhas habilidades em HTML, CSS, JavaScript e Bootstrap. Possuo conhecimento
+                    básico nessas tecnologias e estou constantemente buscando oportunidades de aprendizado para
+                    aprimorar minha compreensão e aplicação prática. Determinado a contribuir para projetos inovadores,
+                    estou embarcando em cursos para aprimorar ainda mais meu conjunto de habilidades e enfrentar
+                    desafios emocionantes no mundo do desenvolvimento web. Entusiasta por tecnologia, moto e PC.
+                    👨🏾‍💻🏍
+                </p>
 
                 <div class="sobre-icones">
-                    <i class="bi bi-bank"> </i>
-                    <span> Faculdade Anhanguera </span>
+                    <i class="bi bi-translate"> </i>
+                    <span> <i>inglês: Técnico </i> </span>
                 </div>
 
-                <div class="sobre-icones">
-                    <i class="bi bi-mortarboard"> </i>
-                    <span> Técnologo </span><br><br>
-                </div>
-                
-               
-                <h4> Desenvolvedor Front End </h4>
-                <span> Mar 2024 - Atualmente </span>
+                <div class="descricao-button">
+                    <a href="https://br.linkedin.com/?src=go-pa&trk=sem-ga_campid.12619604099_asid.149519181115_crid.657343811716_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.1001773&mcid=6821526239111716925&cid=&gad_source=1&gclid=EAIaIQobChMIsaTeqo7rhQMVfmBIAB2-0AhyEAAYASAAEgKArfD_BwE&gclsrc=aw.ds"
+                        target="_blank">
 
-                <div class="sobre-icones">
-                    <i class="bi bi-bank"></i>
-                    <span> Senai Mariano Ferraz </span>
+                        <button class="btn btn-primary">
+                            <span> Conecte-se Comigo </span>
+                            <i class="bi bi-arrow-up-right"> </i>
+                        </button>
+                    </a>
                 </div>
 
-                <div class="sobre-icones">
-                    <i class="bi bi-award-fill"> </i>
-                    <span> Curso de Qualificação </span><br><br>
-                </div>
+            </div> <!-- sobre-descricao -->
+        </div> <!-- fim conteudo 1 -->
+
+        <div class="sobre-content2">
+
+            <div class="col1">
+                <div class="row1">
+                    <h3> Formação </h3>
+                    <h4> Análise e Desenvolvimento de Sistemas</h4>
+                    <span> Fev 2023 - Atualmente </span>
+
+                    <div class="sobre-icones">
+                        <i class="bi bi-bank"> </i>
+                        <span> Faculdade Anhanguera </span>
+                    </div>
+
+                    <div class="sobre-icones">
+                        <i class="bi bi-mortarboard"> </i>
+                        <span> Técnologo </span><br><br>
+                    </div>
+
+
+                    <h4> Desenvolvedor Front End </h4>
+                    <span> Mar 2024 - Atualmente </span>
+
+                    <div class="sobre-icones">
+                        <i class="bi bi-bank"></i>
+                        <span> Senai Mariano Ferraz </span>
+                    </div>
+
+                    <div class="sobre-icones">
+                        <i class="bi bi-award-fill"> </i>
+                        <span> Curso de Qualificação </span><br><br>
+                    </div>
 
                 </div>
 
@@ -387,7 +404,7 @@
                 <h3> Experiências </h3>
 
                 <h4> Analista de Suporte </h4>
-                <span> Stefanini. Maio 2023 - Atualmente </span> 
+                <span> Stefanini. Maio 2023 - Atualmente </span>
                 <span> Realização de reparos preventivos e configurações em micros PCs, etc </span>
 
                 <ul class="sobre-lista">
@@ -448,55 +465,58 @@
         </div><!-- col2 -->
 
 
-    </div> <!-- sobre-content2 -->
-</section>
+        </div> <!-- sobre-content2 -->
+    </section>
 
-<section id="contato" class="contato">
+    <section id="contato" class="contato">
 
-    <h2> Contato </h2>
-    <p>Estou disponivel para orientações e novas conexões.
-        Contate-me via e-mail e Conecte-se comigo através das minhas redes 
-        sociais.
-    </p>
+        <h2> Contato </h2>
+        <p>Estou disponivel para orientações e novas conexões.
+            Contate-me via e-mail e Conecte-se comigo através das minhas redes
+            sociais.
+        </p>
 
-    <ul class="menu menu-social">
-        
-        <li>
-            <a class="menu-link" href="https://github.com/DiasKevin121" target="_blank">
-                <i class="menu-icon bi bi-github"> </i>
-                <span> Github </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="menu-link" href="https://br.linkedin.com/?src=go-pa&trk=sem-ga_campid.12619604099_asid.149519181115_crid.657343811716_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.1001773&mcid=6821526239111716925&cid=&gad_source=1&gclid=EAIaIQobChMIoM3h49DyhQMVA0FIAB3ecAA_EAAYASAAEgLKzvD_BwE&gclsrc=aw.ds" target="_blank">
-                <i class="menu-icon bi bi-linkedin"> </i>
-                <span> linkedin </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="menu-link" href="https://www.instagram.com/" target="_blank">
-                <i class="menu-icon bi bi-instagram"> </i>
-                <span> Instagram </span>
-            </a>
-        </li>
-    </ul>
+        <ul class="menu menu-social">
 
-    <a href="mailto:diaskevin121@outlook.com">
-        <button class="btn btn-primary">
-            <span class="email"> diaskevin121@outlook.com </span>
-        </button>
-    </a>
-</section> <!-- fim contato -->
+            <li>
+                <a class="menu-link" href="https://github.com/DiasKevin121" target="_blank">
+                    <i class="menu-icon bi bi-github"> </i>
+                    <span> Github </span>
+                </a>
+            </li>
 
-<footer>
-    <p>
-        &copy; 2024. Portfolio desenvolvido para fins educativos com base nas aulas no 
-        <a href="https://sp.senai.br/unidade/leopoldina/" target="_blank"> Senai Leopoldina - SP. </a>
-         Desenvolvido por <a href="https://github.com/DiasKevin121" target="_blank"> Kevin Dias. </a>
-    </p>
-</footer>
-<script src="js/script.js"></script>
+            <li>
+                <a class="menu-link"
+                    href="https://br.linkedin.com/?src=go-pa&trk=sem-ga_campid.12619604099_asid.149519181115_crid.657343811716_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.1001773&mcid=6821526239111716925&cid=&gad_source=1&gclid=EAIaIQobChMIoM3h49DyhQMVA0FIAB3ecAA_EAAYASAAEgLKzvD_BwE&gclsrc=aw.ds"
+                    target="_blank">
+                    <i class="menu-icon bi bi-linkedin"> </i>
+                    <span> linkedin </span>
+                </a>
+            </li>
+
+            <li>
+                <a class="menu-link" href="https://www.instagram.com/" target="_blank">
+                    <i class="menu-icon bi bi-instagram"> </i>
+                    <span> Instagram </span>
+                </a>
+            </li>
+        </ul>
+
+        <a href="mailto:diaskevin121@outlook.com">
+            <button class="btn btn-primary">
+                <span class="email"> diaskevin121@outlook.com </span>
+            </button>
+        </a>
+    </section> <!-- fim contato -->
+
+    <footer>
+        <p>
+            &copy; 2024. Portfolio desenvolvido para fins educativos com base nas aulas no
+            <a href="https://sp.senai.br/unidade/leopoldina/" target="_blank"> Senai Leopoldina - SP. </a>
+            Desenvolvido por <a href="https://github.com/DiasKevin121" target="_blank"> Kevin Dias. </a>
+        </p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
